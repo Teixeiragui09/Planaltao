@@ -4,6 +4,7 @@ body{
     align-items: center;
     flex-direction: column;
     background: rgb(73, 73, 73);
+    color: black;
 }
 
 .header{
@@ -22,9 +23,11 @@ body{
 
 .footer{
     width: 100%;
+    height: 100%;
     display: flex;
-    place-content: center;
-    justify-content: space-around;
+    place-content: center ;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0px 30px 0px 30px;
     border: #FF0077 solid 2px;
 }
@@ -78,19 +81,69 @@ ul li.item-menu a .icon > i{
 
 }
 
+.slider{
+    margin: 0px auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: center;
+
+}
+.slide img{
+    width: 450px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 450px;
+    margin: 0px 10px 40px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: blue;
+}
+
+
 #content{
     padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 20px;
+    margin: 100px 10px 0px 10px;
 }
 
 #articles-container{
     overflow-x: auto;
-    height: 500px;
+    height: 350px;
     border: black ridge 2px;
+    margin: 100px 10px 0px 10px;
 }
 
 .articles-row{
