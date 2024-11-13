@@ -77,7 +77,7 @@ body {
     height: 100%;
     display: flex;
     place-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 0px 30px 0px 30px;
     border: #FFD700 solid 2px;
