@@ -1,24 +1,95 @@
-.slider-images{
+.slider-container {
+    position: relative;
+    width: 50vw;
+    height: 30vh; /* Altura do slider */
+    overflow: hidden;
+}
+
+.slider-images div img {
     width: 100%;
-    display: flex;
-    justify-items: center;
+    height: 100%;
+    object-fit: contain;
 }
 
-.slider-images div{
+.slider-container input[type="radio"] {
     display: none;
-    justify-content: center;
 }
 
-.img{
-    width: 25%;
+.slider-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-
-.active{
-    display: flex!important;
+.slider-images > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease; 
 }
 
-.slider-button{
+#radio1:checked ~ .slider-images .image1,
+#radio2:checked ~ .slider-images .image2,
+#radio3:checked ~ .slider-images .image3,
+#radio4:checked ~ .slider-images .image4 {
+    opacity: 1;
+}
+
+@keyframes slide {
+    0% { opacity: 1; }
+    20% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.slider-images .image1 {
+    animation: slide 16s infinite;
+}
+
+.slider-images .image2 {
+    animation: slide 16s infinite;
+    animation-delay: 4s;
+}
+
+.slider-images .image3 {
+    animation: slide 16s infinite;
+    animation-delay: 8s;
+}
+
+.slider-images .image4 {
+    animation: slide 16s infinite;
+    animation-delay: 12s;
+}
+
+#radio1:checked ~ .slider-images .image1,
+#radio2:checked ~ .slider-images .image2,
+#radio3:checked ~ .slider-images .image3,
+#radio4:checked ~ .slider-images .image4 {
+    animation: none;
+}
+
+.radio-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
+    gap: 10px;
+}
+
+.radio-buttons label {
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.radio-buttons label:hover,
+input[type="radio"]:checked + label {
+    background-color: #333;
 }
