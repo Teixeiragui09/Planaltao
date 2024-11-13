@@ -1,0 +1,24 @@
+.slider-images{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+}
+
+.slider-images div{
+    display: none;
+    justify-content: center;
+}
+
+.img{
+    width: 25%;
+}
+
+
+.active{
+    display: flex!important;
+}
+
+.slider-button{
+    display: flex;
+    justify-content: center;
+}

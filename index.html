@@ -6,12 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planaltão</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/estilo1.css">
+    <link rel="stylesheet" href="./css/estilo1.css">
+    <link rel="stylesheet" href="./css/slider.css">
 </head>
 
 <body>
+    <div class="menu-background" style="display: none;" onclick="hidenMenu()"></div>
     <div class="header">
-        <h1>Nome da ONG</h1>
+        <div class="headers header-button">
+            <a class="buttons" href="#" onclick="showMenu()">
+                <span>
+                <svg width="40" height="40" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+                </span>
+            </a>
+        </div>
+        <div class="headers header-tittle">
+            <h1>Nome da ONG</h1>
+        </div>
+        <div class="headers header-icons">
+            <a class="buttons" href="#">
+                <svg x="0px" y="0px" width="40px" height="40px" viewBox="0 0 48 48">
+                    <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
+                    </svg>
+            </a>
+            <a class="buttons" href="#">
+                <svg x="0px" y="0px" width="40px" height="40px" viewBox="0 0 48 48">
+                    <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
+                    </svg>
+            </a>
+            <a class="buttons" href="#">
+                <svg x="0px" y="0px" width="40px" height="40px" viewBox="0 0 48 48">
+                    <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
+                    </svg>
+            </a>
+        </div>
     </div>
     <div class="container">
         <nav class="menu-lateral">
@@ -19,36 +51,36 @@
                 <li class="item-menu">
                     <a href="index.html">
                         <span class="icon"><i class="bi bi-house-door"></i></span>
-                        <span class="txt-link">Home</span>
+                        <span>Home</span>
                     </a>
                 </li>
                 <li class="item-menu">
                     <a href="melhorias.html">
                         <span class="icon"><i class="bi bi-tornado"></i></span>
-                        <span class="txt-link">Melhorias</span>
+                        <span>Melhorias</span>
                     </a>
                 </li>
                 <li class="item-menu">
                     <a href="legislacoes.html">
                         <span class="icon"><i class="bi bi-bank"></i></span>
-                        <span class="txt-link">Legislações</span>
+                        <span>Legislações</span>
                     </a>
                 </li>
                 <li class="item-menu">
                     <a href="denuncias.html">
                         <span class="icon"><i class="bi bi-shield-x"></i></span>
-                        <span class="txt-link">Denuncias</span>
+                        <span>Denuncias</span>
                     </a>
                 </li>
                 <li class="item-menu">
                     <a href="S.A.C.html">
                         <span class="icon"><i class="bi bi-telephone"></i></span>
-                        <span class="txt-link">S.A.C</span>
+                        <span>S.A.C</span>
                     </a>
                 <li class="item-menu">
                     <a href="quem_somos.html">
                         <span class="icon"></i><i class="bi bi-person-circle"></i></span>
-                        <span class="txt-link">Quem somos</span>
+                        <span>Quem somos</span>
                     </a>
                 </li>
                 </li>
@@ -56,57 +88,38 @@
 
         </nav>
 
-        <div class="slider">
-            <div class="slides">
-                <!--radio buttons-->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <!--end radio buttons-->
-                
-                <!--Slides img-->
-                
-                <div class="slide first">
-                    <img src="./img/forza1.jpg" alt="imagem 1"/>
-                </div>
-                <div class="slide">
-                    <img src="./img/forza2.jpg" alt="imagem 2"/>
-                </div>
-                <div class="slide">
-                    <img src="./img/forza3.jpg" alt="imagem 3"/>
-                </div>
-                <div class="slide">
-                    <img src="./img/forza4.jpg" alt="imagem 4"/>
-                </div>
-                <!--Fim slides img-->
 
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-            </div>
-
-            <!-- manual navigation-->
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
-            <!-- end manual navigation-->
-                
-        </div>
 
         <div id="content">
+            <div class="slider">
+                <div class="slider-images">
+                    <div class="image1">
+                        <img class="img" src="./img/forza1.jpg" alt="">
+                    </div>
+                    <div class="image2">
+                        <img class="img" src="./img/forza2.jpg" alt="">
+                    </div>
+                    <div class="image3">
+                        <img class="img" src="./img/forza3.jpg" alt="">
+                    </div>
+                    <div class="image4">
+                        <img class="img" src="./img/forza4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slider-button">
+                    <input type="radio" name="slider-radio" id="slider1">
+                    <input type="radio" name="slider-radio" id="slider2">
+                    <input type="radio" name="slider-radio" id="slider3">
+                    <input type="radio" name="slider-radio" id="slider4">
+                </div>
+            </div>
             <div id="articles-container">
                 <div class="articles-row">
                     <div class="article-card">
                         <img class="article-img" src="./img/slide1.png" alt="">
                         <div class="article-tittle">
-                            <a class="link-btn1" href="https://www.seduh.df.gov.br/avanca-regularizacao-do-setor-tradicional-de-planaltina/">
+                            <a class="link-btn1"
+                                href="https://www.seduh.df.gov.br/avanca-regularizacao-do-setor-tradicional-de-planaltina/">
                                 Avança regularização do Setor Tradicional de Planaltina</a>
                         </div>
                         <div class="article-content"></div>
@@ -114,7 +127,8 @@
                     <div class="article-card">
                         <img class="article-img" src="./img/slide2.jfif" alt="">
                         <div class="article-tittle">
-                            <a class="link-btn2" href="https://g1.globo.com/df/distrito-federal/df1/video/cadeirantes-sofrem-com-falta-de-acessibilidade-em-planaltina-13080333.ghtml">
+                            <a class="link-btn2"
+                                href="https://g1.globo.com/df/distrito-federal/df1/video/cadeirantes-sofrem-com-falta-de-acessibilidade-em-planaltina-13080333.ghtml">
                                 Cadeirantes sofrem com falta de acessibilidade em Planaltina</a>
                         </div>
                         <div class="article-content">
@@ -123,11 +137,12 @@
                     <div class="article-card">
                         <img class="article-img" src="./IMG/slide3.jpg" alt="">
                         <div class="article-tittle">
-                            <a class="link-btn3" href="https://g1.globo.com/df/distrito-federal/bom-dia-df/video/perigo-em-escola-rural-de-planaltina-com-risco-de-choque-para-alunos-e-professores-13082603.ghtml">
+                            <a class="link-btn3"
+                                href="https://g1.globo.com/df/distrito-federal/bom-dia-df/video/perigo-em-escola-rural-de-planaltina-com-risco-de-choque-para-alunos-e-professores-13082603.ghtml">
                                 Perigo em escola rural de Planaltina com risco
-                                 de choque para alunos e professores</a>
+                                de choque para alunos e professores</a>
                         </div>
-                        <div class="article-content">    
+                        <div class="article-content">
                         </div>
                     </div>
                 </div>
@@ -135,8 +150,9 @@
                     <div class="article-card">
                         <img class="article-img" src="./img/slide4.jpg" alt="">
                         <div class="article-tittle">
-                            <a class="link-btn4" href="https://g1.globo.com/df/distrito-federal/df1/video/comissao-de-direitos-humanos-fiscaliza-pediatria-do-hospital-regional-de-planaltina-13066218.ghtml">
-                                Comissão de Direitos Humanos fiscaliza pediatria 
+                            <a class="link-btn4"
+                                href="https://g1.globo.com/df/distrito-federal/df1/video/comissao-de-direitos-humanos-fiscaliza-pediatria-do-hospital-regional-de-planaltina-13066218.ghtml">
+                                Comissão de Direitos Humanos fiscaliza pediatria
                                 do Hospital Regional de Planaltina </a>
                         </div>
                         <div class="article-content">
@@ -145,9 +161,10 @@
                     <div class="article-card">
                         <img class="article-img" src="./img/slide5.jpg" alt="">
                         <div class="article-tittle">
-                            <a class="link-btn5" href="https://g1.globo.com/df/distrito-federal/df1/video/moradores-reclamam-da-falta-de-profissionais-no-caps-de-planaltina-12972707.ghtml">
+                            <a class="link-btn5"
+                                href="https://g1.globo.com/df/distrito-federal/df1/video/moradores-reclamam-da-falta-de-profissionais-no-caps-de-planaltina-12972707.ghtml">
                                 Moradores reclamam da falta de profissionais
-                                 no CAPS de Planaltina
+                                no CAPS de Planaltina
                             </a>
                         </div>
                         <div class="article-content">
@@ -156,8 +173,9 @@
                     <div class="article-card">
                         <img class="article-img" src="./img/slide6.jpg" alt="">
                         <div class="article-tittle">
-                            <a class="link-btn6" href="https://g1.globo.com/df/distrito-federal/df2/video/na-sua-cidade-moradores-de-planaltina-enfrentam-dificuldades-com-o-transporte-publico-12906297.ghtml">
-                                "Na Sua Cidade": Moradores de Planaltina 
+                            <a class="link-btn6"
+                                href="https://g1.globo.com/df/distrito-federal/df2/video/na-sua-cidade-moradores-de-planaltina-enfrentam-dificuldades-com-o-transporte-publico-12906297.ghtml">
+                                "Na Sua Cidade": Moradores de Planaltina
                                 enfrentam dificuldades com o transporte público
                             </a>
                         </div>
@@ -173,7 +191,8 @@
     <div class="footer">
         <h1>gmail:ong.planaltina@gmail.com</h1>
         <h2></h2>
-        <div><p>contatos</p>
+        <div>
+            <p>contatos</p>
             <p>(xx)xxxx-xxxx</p>
         </div>
     </div>
